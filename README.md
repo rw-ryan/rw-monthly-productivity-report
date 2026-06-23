@@ -9,9 +9,11 @@ Produces a structured English Confluence page in **PRODTECH** with executive sum
 ### 1. Install as a Cursor skill (recommended)
 
 ```bash
-git clone https://github.com/visable-dev/rw-monthly-productivity-report.git
+git clone https://github.com/rw-ryan/rw-monthly-productivity-report.git
 ln -s "$(pwd)/rw-monthly-productivity-report" ~/.cursor/skills/rw-monthly-productivity-report
 ```
+
+> **Org sharing:** This repo is under `rw-ryan` for now. To host under `visable-dev`, ask an org admin to create `visable-dev/rw-monthly-productivity-report` and transfer or mirror this repo, then add team members as collaborators.
 
 Or copy the folder into `~/.cursor/skills/rw-monthly-productivity-report`.
 
