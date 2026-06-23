@@ -1,0 +1,2 @@
+cp config.example.json data/config.json
+# Edit data/config.json for the report month and CSV filename

@@ -1,0 +1,14 @@
+{
+  "report_month_label": "May 2026",
+  "report_month_start": "2026-05-01",
+  "report_month_end": "2026-05-31",
+  "next_month_start": "2026-06-01",
+  "status_time_export_date": "2026-06-10",
+  "csv_file": "status-time-export.csv",
+  "universe_file": "status-time-universe.json",
+  "cache_dir": "epic-cache",
+  "report_file": "epic-report.json",
+  "attention_file": "confluence-attention.json",
+  "adf_output": "productivity-update-confluence.adf.json",
+  "jql_urls_output": "jira-work-item-urls.txt"
+}

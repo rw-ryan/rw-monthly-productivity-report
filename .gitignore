@@ -1,0 +1,16 @@
+# Local working data (CSV exports, Jira cache, generated reports)
+data/*
+!data/.gitkeep
+!data/config.json.example
+
+# Python
+__pycache__/
+*.py[cod]
+.Python
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
