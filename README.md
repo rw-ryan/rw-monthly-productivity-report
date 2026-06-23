@@ -9,7 +9,7 @@ Produces a structured English Confluence page in **PRODTECH** with executive sum
 ### 1. Install as a Cursor skill (recommended)
 
 ```bash
-git clone https://github.com/visable-dev/rw-monthly-productivity-report.git
+git clone https://github.com/rw-ryan/rw-monthly-productivity-report.git
 ln -s "$(pwd)/rw-monthly-productivity-report" ~/.cursor/skills/rw-monthly-productivity-report
 ```
 
