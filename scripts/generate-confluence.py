@@ -21,10 +21,11 @@ TEAM = {
     "DRG": "Dragon",
     "KRK": "Kraken",
     "PGS": "Pegasus",
+    "FE": "Frontend",
 }
 
 JQL = (
-    'project in (MOB, ARISE, CTOOL, DOL, DRG, KRK, PGS) '
+    'project in (MOB, ARISE, CTOOL, DOL, DRG, FE, KRK, PGS) '
     'AND issuetype = Epic AND created >= "2026-03-05"'
 )
 
@@ -320,7 +321,7 @@ def main():
                     text_node(f"{r['totals']['epics_analyzed']} Epics", bold=True),
                     text_node(" from the "),
                     link_node("Status Time report", STATUS_TIME_URL),
-                    text_node(" (7 teams, Epic, created ≥ 2026-03-05). Same scope as JQL below."),
+                    text_node(" (8 teams, Epic, created ≥ 2026-03-05). Same scope as JQL below."),
                 ],
                 [
                     text_node("In Progress: when "),
@@ -376,7 +377,7 @@ def main():
                     ),
                 ],
                 [
-                    text_node("Teams: Arise, Bamboo, Hummingbird, Dolphin, Dragon, Kraken, Pegasus."),
+                    text_node("Teams: Arise, Bamboo, Dolphin, Dragon, Frontend, Hummingbird, Kraken, Pegasus."),
                 ],
             ]
         )
@@ -406,7 +407,7 @@ def main():
         )
     )
     team_rows = []
-    for code in ["ARISE", "CTOOL", "DOL", "MOB", "DRG", "KRK", "PGS"]:
+    for code in ["ARISE", "CTOOL", "DOL", "MOB", "DRG", "FE", "KRK", "PGS"]:
         d = by_team[code]
         rel = d["in_progress_stats"]["released_in_month"]
         sta = d["in_progress_stats"]["started_in_month"]
