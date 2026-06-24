@@ -1,8 +1,8 @@
 ---
 name: rw-monthly-productivity-report
 description: >-
-  Build and publish Visable monthly Epic productivity reports for 7 cross-functional
-  teams (Arise, Bamboo, Dolphin, Hummingbird, Dragon, Kraken, Pegasus) using the
+  Build and publish Visable monthly Epic productivity reports for 8 cross-functional
+  teams (Arise, Bamboo, Dolphin, Dragon, Frontend, Hummingbird, Kraken, Pegasus) using the
   Status Time Free report CSV as the epic universe; In Progress from Actual Start/Release
   date difference when both are set, otherwise Status Time CSV column,
   Jira date fields, and Confluence PRODTECH updates. Use when the user asks for monthly
@@ -12,7 +12,7 @@ description: >-
 
 # Monthly Epic Productivity Report (Visable)
 
-Produce a structured **English** Confluence report for one calendar month, covering 7 teams. The **Status Time Free report** defines the epic universe. **In Progress** uses Actual Release − Actual Start (calendar days) when both dates are set on the Epic; otherwise the Status Time **In Progress** column — not broad Jira queries or changelog parsing.
+Produce a structured **English** Confluence report for one calendar month, covering 8 teams. The **Status Time Free report** defines the epic universe. **In Progress** uses Actual Release − Actual Start (calendar days) when both dates are set on the Epic; otherwise the Status Time **In Progress** column — not broad Jira queries or changelog parsing.
 
 Full field IDs, measurement rules, and URLs: [reference.md](reference.md)
 
@@ -50,6 +50,7 @@ Title is derived as `{report_month_label} Productivity Update`. Use the same str
 | KRK | Kraken |
 | PGS | Pegasus |
 | ARISE | Arise |
+| FE | Frontend |
 
 ## Workflow checklist
 
@@ -70,7 +71,7 @@ Title is derived as `{report_month_label} Productivity Update`. Use the same str
 3. Universe JQL must match export row count:
 
 ```text
-project in (MOB, ARISE, CTOOL, DOL, DRG, KRK, PGS) AND issuetype = Epic AND created >= "2026-03-05"
+project in (MOB, ARISE, CTOOL, DOL, DRG, FE, KRK, PGS) AND issuetype = Epic AND created >= "2026-03-05"
 ```
 
 **Do not** use “all open epics + month-closed epics” (produced wrong 227-epic set).

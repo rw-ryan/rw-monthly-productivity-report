@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 
 JQL = (
-    'project in (MOB, ARISE, CTOOL, DOL, DRG, KRK, PGS) '
+    'project in (MOB, ARISE, CTOOL, DOL, DRG, FE, KRK, PGS) '
     'AND issuetype = Epic AND created >= "2026-03-05"'
 )
 

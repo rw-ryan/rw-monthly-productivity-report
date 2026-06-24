@@ -20,7 +20,7 @@ Set `REPORT_MONTH_LABEL` in `generate-confluence.py`; use the same value for Con
 ## Epic universe JQL
 
 ```
-project in (MOB, ARISE, CTOOL, DOL, DRG, KRK, PGS) AND issuetype = Epic AND created >= "2026-03-05"
+project in (MOB, ARISE, CTOOL, DOL, DRG, FE, KRK, PGS) AND issuetype = Epic AND created >= "2026-03-05"
 ```
 
 Match Status Time export row count exactly. Do not use broader JQL (227-epic mistake).
@@ -47,6 +47,7 @@ Cache: `epic-cache/{KEY}.json` via `getJiraIssue`.
 | DRG | Dragon |
 | KRK | Kraken |
 | PGS | Pegasus |
+| FE | Frontend |
 
 ## Document outline (Confluence ADF)
 

@@ -10,7 +10,7 @@ from pathlib import Path
 
 from config import load_config, month_short_name, next_month_short_name
 
-TEAMS = ["ARISE", "CTOOL", "DOL", "MOB", "DRG", "KRK", "PGS"]
+TEAMS = ["ARISE", "CTOOL", "DOL", "MOB", "DRG", "FE", "KRK", "PGS"]
 EARLY_STAGE_STATUSES = frozenset({"To Do", "Backlog"})
 
 DURATION_RE = re.compile(
@@ -347,7 +347,7 @@ def main():
         "report_month_end": month_end.isoformat(),
         "next_month_start": next_month_start.isoformat(),
         "assumptions": [
-            f"Epic universe: {len(all_epics)} epics from Status Time report (7 teams, Epic, created >= 2026-03-05)",
+            f"Epic universe: {len(all_epics)} epics from Status Time report (8 teams, Epic, created >= 2026-03-05)",
             f"In Progress days: Actual Release − Actual Start (calendar days) when both dates set; "
             f"else Status Time CSV column 'In Progress' ({csv_file.name})",
             f"Released in {month_name}: Actual Release Date in {month_name} OR resolutiondate in {month_name} when Actual Release missing",

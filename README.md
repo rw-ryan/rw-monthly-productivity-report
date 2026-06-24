@@ -1,6 +1,6 @@
 # Monthly Epic Productivity Report
 
-Cursor skill and Python toolkit for Visable **monthly Epic productivity reports** — 7 cross-functional teams (Arise, Bamboo, Dolphin, Hummingbird, Dragon, Kraken, Pegasus).
+Cursor skill and Python toolkit for Visable **monthly Epic productivity reports** — 8 cross-functional teams (Arise, Bamboo, Dolphin, Dragon, Frontend, Hummingbird, Kraken, Pegasus).
 
 Produces a structured English Confluence page in **PRODTECH** with executive summary, methodology, team breakdown, and epics needing attention. Epic universe comes from the **Status Time Free** CSV export; **In Progress** uses Actual Release − Actual Start when both dates are set, otherwise the Status Time column.
 
